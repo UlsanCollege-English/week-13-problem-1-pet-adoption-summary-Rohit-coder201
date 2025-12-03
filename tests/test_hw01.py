@@ -1,10 +1,7 @@
-import os
 import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import pytest
-
-# Ensure we can import main.py from the homework folder
-sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-
 from main import summarize_adoptions
 
 
